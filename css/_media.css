@@ -1,0 +1,262 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.window .header {
+		display: none;
+	}
+	html {
+	    font-size: 8px;
+	}
+	.btn-green::before {
+		height: 67px;
+	}	
+	.say-about__slide-content {
+		max-width: 510px;
+	}
+	.photo-gallery__foto--left-bottom ul li {
+		max-width: 220px;
+		height: 171px;
+		margin-right: 8px;
+	}
+	.photo-gallery__foto--left-bottom ul li:last-child {
+		max-width: 303px;
+		height: 171px;
+	}
+	.book-time__table .btn-green-table {
+		max-width: 225px;
+	}
+	.book-time__table .btn-green-table::before {
+	    height: 47px;
+	}
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {	
+	.window .header {
+		display: block;
+	}
+	.logo-top {
+	    padding-top: 40px;
+	}
+	.nav-wrap {
+		display: none;
+	}
+	.request-call {
+		text-align: center;
+		padding-top: 75px;
+	}
+	.main-header__btn-wrap {
+	    padding-top: 65px;
+	}
+	.photo-gallery__foto--left-top,
+	.photo-gallery__foto--right-top,
+	.photo-gallery__foto--left-bottom ul li {
+		margin-bottom: 30px;
+	}
+	.book-time::after {
+		display: none;
+	}
+	.book-time__table .btn-green-table {
+	    max-width: 680px;
+	}
+	.why-we__icon {
+	    text-align: center;
+	    margin-bottom: 20px;
+	}
+	.why-we__content h4 {
+		text-align: center;
+	}
+	.why-we__content {
+		max-width: 100%;
+	}
+	.say-about__slide-wrap {
+		padding-top: 12px;
+	}
+	.say-about__slide-foto {
+		padding-left: 31%;
+	}
+	.say-about__slide-content span {
+		display: block;
+		text-align: center;
+	}
+	#say-about-slider .owl-nav {
+		display: none;
+	}
+	#say-about-slider .owl-dots {
+		padding-top: 25px;
+	}
+	.map-prewie {
+		padding-left: 24px;
+	}
+	.main-footer {
+		padding-top: 25px;
+	}
+	.main-footer__privacy-policy,
+	.main-footer__request-call {
+		text-align: center;
+		margin-bottom: 25px;
+	}
+	.map-prewie__social-icons {
+	    padding-left: 0;
+	}
+	
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.btn-green::before {
+	    height: 71px;
+	}	
+	.photo-gallery__foto--left-bottom ul li {
+		margin-right: 62px;
+	}
+	.map-prewie {
+		width: 100%;
+		text-align: center;
+		padding-left: 0;
+		position: relative;
+	}
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+}
+
+/* Custom, iPhone 6 Plus*/
+@media only screen and (max-width : 736px) {
+	.book-time__table .btn-green-table {
+	    max-width: 580px;
+	}
+	.say-about__slide-wrap {
+		padding-left: 25px;
+	}
+	
+}
+
+/* Custom, iPhone 6 */
+@media only screen and (max-width : 667px) {
+	.say-about__slide-wrap {
+	    padding-left: 15px;
+	}
+	.say-about__slide-content {
+		margin-left: 0;
+	}
+}
+/* Custom, iPhone 5 */
+@media only screen and (max-width : 568px) {
+	.main-header__headline-wrap {
+		padding-top: 80px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .say-about__slide-foto {
+	    padding-left: 28%;
+	}
+	.photo-gallery__foto--left-bottom ul li,
+	.photo-gallery__foto--left-bottom ul li:last-child {
+		max-width: 100%;
+		margin-right: 0;
+	}
+}
+
+/* Custom, iPhone 6 Plus*/
+@media only screen and (max-width : 414px) {
+	.say-about__slide-wrap {
+	    padding-left: 8px;
+	}
+	.map-prewie__address ul li,
+	.map-prewie__phone-for-applications ul li,
+	.map-prewie__mode ul li {
+		margin-right: 10px;
+	}
+	.map-prewie__address ul li:last-child,
+	.map-prewie__phone-for-applications ul li:last-child,
+	.map-prewie__mode ul li:last-child {
+		margin-right: 0;
+	}	
+}
+
+/* Custom, iPhone 6 */
+@media only screen and (max-width : 375px) {
+	.main-header__headline-wrap--center h1 {
+		font-size: 7.2rem;
+	}
+	.map-prewie__address ul li, 
+	.map-prewie__phone-for-applications ul li, 
+	.map-prewie__mode ul li {
+		margin-right: 0;
+	}
+	.map-prewie__address ul li img,
+	.map-prewie__phone-for-applications ul li img,
+	.map-prewie__mode ul li img {
+		display: none;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	.window .header {
+		display: none;
+	}
+}

@@ -1,0 +1,75 @@
+/*--------------------------------- start book-time ------------------------------*/
+.book-time {
+	width: 100%;
+	min-height: 836px;	
+	padding-top: 110px;
+	padding-bottom: 30px;
+	margin-bottom: -25px;
+	position: relative;
+	z-index: 200;
+	&__headline {
+		text-align: center;
+		margin-bottom: 60px;
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	&__table {
+		width: 100%;
+		min-height: 350px;
+		background: rgba(255, 248, 228,0.7);
+		padding-top: 65px;
+		margin-bottom: 45px;
+		&-top {
+			display: block;
+			max-width: 275px;
+			height: 85px;
+			margin: 0 auto;
+			p {				
+				text-align: center;
+				font-family: 'Barketina';
+				font-size: 3.0rem;
+				color: @grey;
+			}
+		}
+		span {
+			text-align: center;
+			display: block;
+			font-family: 'Barketina';
+			font-size: 4.8rem;
+			color: #5d6625;
+			margin-bottom: 20px;
+		}
+		.btn-green-table {
+			display: block;
+			max-width: 270px;
+			font-size: 2.4rem;
+			padding: 12px;
+			margin: 0 auto;
+			&:before {
+				height: 54px;				
+			}
+		}
+	}
+	&__footnote {
+		text-align: center;		
+		p {
+			font-family: 'ProximaNova-regular';
+			font-size: 1.4rem;
+			color: @grey;
+		}
+	}
+	&:after {
+		content: ' ';
+		display: block;
+		width: 410px;
+		height: 305px;
+		background: url("@{dir}clock.png")no-repeat top center;
+		position: absolute;
+		top: -154px;
+		right: 0;
+	}
+}
+
+/*--------------------------------- end book-time ------------------------------*/

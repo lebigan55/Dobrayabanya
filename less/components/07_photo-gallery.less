@@ -1,0 +1,129 @@
+/* --------------------------------- start photo-gallery ------------------------------ */
+.photo-gallery {
+	width: 100%;
+	min-height: 1315px;
+	background: #fcf7ee;
+	padding-top: 145px;
+	padding-bottom: 30px;
+	margin-bottom: -17px;
+	&__headline {
+		text-align: center;
+		margin-bottom: 60px;
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	&__foto {		
+		&--left {
+			&-top {
+				margin-bottom: 26px;
+				overflow: hidden;
+				&:hover img {
+					transform: scale(1.5);
+				}
+				img {
+					width: 100%;
+					height: auto;
+					transition: all 1.7s;
+		    		transform: scale(1);		    		
+				}
+			}
+			&-bottom {				
+				ul {
+					padding: 0;
+					margin: 0;
+					li {
+						max-width: 269px;
+						height: 209px;
+						list-style-type: none;
+						display: inline-block;
+						vertical-align: top;						
+						margin-right: 10px;
+						overflow: hidden;
+						&:hover img {
+							transform: scale(1.5);
+						}
+						img {
+							max-width: 100%;
+							height: auto;
+							transition: all 1.7s;
+				    		transform: scale(1);
+
+						}
+					}
+					li:last-child {	
+						max-width: 369px;
+						height: 209px;					
+						margin-right: 0;
+						overflow: hidden;
+						&:hover img {
+							transform: scale(1.5);
+						}
+						img {
+							max-width: 100%;
+							height: auto;
+							transition: all 1.7s;
+				    		transform: scale(1);
+						}
+					}
+				}
+			}
+		}
+		&--right {
+			&-top {
+				margin-bottom: 35px;				
+				overflow: hidden;
+				&:hover img {
+					transform: scale(1.5);
+				}
+				img {
+					width: 100%;
+					height: auto;
+					transition: all 1.7s;
+				    transform: scale(1);
+				}
+			}
+			&-bottom {					
+				overflow: hidden;
+				&:hover img {
+					transform: scale(1.5);
+				}
+				img {
+					width: 100%;
+					height: auto;
+					transition: all 1.7s;
+				    transform: scale(1);
+				}
+			}
+		}
+	}
+	&__link {
+		text-align: center;
+		padding-top: 40px;
+		a {
+			font-family: 'Barketina';
+			font-size: 2.35rem;
+			border-bottom: 1px dashed #576927;
+			&:hover {
+				text-decoration: none;
+				color: @green;
+				border-bottom: 1px solid #576927;
+			}
+		}
+	}
+}
+.clock {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+/* --------------------------------- background magnific popap -----------------------*/
+.mfp-bg {
+	background: rgba(87, 105, 39, 0.6);
+}
+.image-source-link {
+	display: none;
+}
+
+/* --------------------------------- end photo-gallery ------------------------------ */
